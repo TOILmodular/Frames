@@ -69,3 +69,6 @@ The versions differ in the flash memory size:
 The code size requires the 128kB version.
 However, that version might be difficult to find, if available at all.
 But it turned out, that STM3F103C8T6 is also ok for this module.
+
+## Offset CV +10V/+5V
+The original design from Mutable Instruments provides the option to have a +5V offset CV for all outputs, instead of +10V. This is done by a jumper setting on the module backside. I decided to skip that part and to only have the +10V offset version, since the implementation of that option would have required another dual op amp.
