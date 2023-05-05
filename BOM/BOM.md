@@ -27,27 +27,22 @@
 | Diode | LED | 5 | |
 | Diode | LED RGB multi-color) | 2 | common cathode |
 | Transistor | MMBT3904 | 1 | SMD (SOT-23) |
-| Op Amp | NJM4580 | 1 | SMD (8-SSOP) - alternative TL072 (SMD, same package) |
-| Quad VCA | V2164 | 1 | alternative AS2164 (e.g. from Electric Druid or Thonk |
-| Buffer | SN74AHCT1G125 | 4 | |
-| Optocoupler | 6N137 | 4 | |
-| DAC | DAC8564 | 1 | SMD (16-VSSOP) |
-| Voltage Regulator | LM1117-3.3 | 1 | SMD (SOT-223) |
-| Voltage Regulator | MCP1703 | 1 | SMD (SOT-23) |
-| Voltage Regulator | REF02 | 1 | |
-| Encoder | 24 steps w/clicks w/switch | 1 | |
-| Mono Jack | 3.5mm | 8 | |
-| Switch | Tactile | 3 | e.g. Mouser: TL1105SPF160 |
-| LED module | 14 segments, common cathode | 1 | e.g. Mouser: KINGBRIGHT PDC54-11 ||
+| Op Amp | TL072 or NJM4580 | 1 | SMD (8-SOIC) |
+| Quad VCA | V2164 or AS2164 | 1 | |
+| DAC | DAC124S085 | 1 | SMD (10-VSSOP) |
+| Voltage Regulator | LM1117-3.3 | 2 | SMD (SOT-223) |
+| Voltage Regulator | LM4040B10 | 1 | SMD (SOT-23) |
+| Voltage Regulator | LM4040B25 | 1 | SMD (SOT-23) |
+| Potentiometer | B10K | 6 | |
+| Mono Jack | 3.5mm | 12 | |
+| Switch | Tactile | 2 | e.g. Mouser: TL1105SPF160 |
+| Toggle Switch | ON-ON | 1 | SPDT |
 | Development Board | STM32F103 Blue Pill | 1 | See section "STM32F103 Version" in ReadMe file |
-| DIN Connector | 5 Pin Female | 2 | e.g. Mouser: 57GB5FX |
 | Header | 2.54mm Female 1x20 | 2 | Socket Connector for Blue Pill Board |
-| Header | 2.54mm Male 1x19 | 1 | Connector Main Board |
-| Header | 2.54mm Male 1x11 | 2 | Connector Main Board |
+| Header | 2.54mm Male 1x10 | 1 | Connector Main Board |
 | Header | 2.54mm Male 1x7 | 1 | Connector Main Board |
-| Header | 2.54mm Male 1x3 | 1 | Connector Main Board |
-| Header | 2.54mm Female 1x19 | 1 | Connector Control Board |
-| Header | 2.54mm Female 1x11 | 2 | Connector Control Board |
+| Header | 2.54mm Male 1x6 | 2 | Connector Main Board |
+| Header | 2.54mm Female 1x10 | 1 | Connector Control Board |
 | Header | 2.54mm Female 1x7 | 1 | Connector Control Board |
-| Header | 2.54mm Female 1x3 | 1 | Connector Control Board |
+| Header | 2.54mm Female 1x6 | 2 | Connector Control Board |
 | Header | 2.54mm Male 2x5 | 1 | Power Connector |
