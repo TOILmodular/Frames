@@ -45,6 +45,8 @@ There are several SMD components, which I listed here. Although the microcontrol
 - MMBT3904 (SMD version of the 2N3904 transistor, SOT-23-3 Package)
 - 0.1uF capacitors (1608 package)
 
+The design contains a quad VCA IC V2164 (THT version) from Cool Audio. That chip might not be available anymore. An alternative is the AS2164, available at Electric Druid or Thonk.
+
 Concerning the resistor size, I am usually using small-size resistors, about half the length of the usual size, so they need less space on the PCB. If you want to use my Gerber files, you have to consider that fact. You might still use normal size resistors and put them in a standing position on the boards. Should also work fine.
 
 ## Firmware
