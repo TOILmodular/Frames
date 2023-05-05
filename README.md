@@ -1,4 +1,4 @@
-# Frames - A 4-Channel Keyframer/Mixer Eurorack Module
+# Frames - 4-Channel Keyframer/Mixer Eurorack Module
 A clone of the Mutable Instruments Frames module with the use of the STM32F103 Blue Pill board.
 
 <img height="800" src="https://user-images.githubusercontent.com/97026614/236367816-3db1058e-74cc-4f85-8c20-534c7b78713d.jpg">
