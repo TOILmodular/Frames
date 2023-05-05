@@ -13,32 +13,37 @@ If you want to build the module yourself, I uploaded firmware, schematic, BOM an
 There are two different versions for the control board, an "original" and a "Thonk" version.
 Reason is that for my own module, I am using specific potentiometers - 16K4 series from Supertech Electronics - and 3.5mm jack sockets - MJ-355 from Marushin - available at my local electronics shop.
 
-<img width="300" alt="OrigCtrlPCBFront" src="https://user-images.githubusercontent.com/97026614/230913339-03c6ba1d-3a83-4cbc-a96a-c415498f99b9.png">
+<img width="300" alt="Frames_CtrlPCB_Orig" src="https://user-images.githubusercontent.com/97026614/236384841-ecda3ace-aa2b-498c-9491-87a92e6ad552.png">
 
 However, since most DIY projects for Eurorack modules out there are using potentiometers from ALPHA and so-called THONKICONN jacks, as they are provided by Thonk in the UK, I also created a version with footprints for those components.
 Choose the one you need.
 
-<img width="300" alt="CtrlPCBThonk" src="https://user-images.githubusercontent.com/97026614/230913456-7f74d3d0-3f92-4ab7-9388-9e2fb55da0b8.png">
+<img width="300" alt="Frames_CtrlPCB_Thonk" src="https://user-images.githubusercontent.com/97026614/236384960-e02f76fd-f46f-4d09-a1d5-d10e453249d3.png">
 
-The layout of the main PCB is slightly different for both versions, as I needed to relocate the board connection points due to the size difference of the jacks in both versions. Make sure to use the correct pair of Gerber files.
+The layout of the main PCB is the same for both versions.
 
-<img width="300" alt="MainPCB" src="https://user-images.githubusercontent.com/97026614/230913521-842da377-7302-4a35-ab89-c16e38aaa3ca.png">
+<img width="300" alt="Frames_MainPCB" src="https://user-images.githubusercontent.com/97026614/236385007-8943d4b2-a96c-4268-aac2-eb99cd04bfe4.png">
 
 I created the Gerber files with the online tool EasyEDA and ordered it at JLCPCB.
-I cannot guarantee, if this set of zipped Gerber files works also for other providers, like e.g. PCBWay. I have not tried that. But I saw online, that others did it.
 
 ## Panel Layout
 I added the information about hole coordinates for the front panel in the folder PanelLayout, referring to the component layout in the Gerber files.
 
+## Central Knob Illumination
+The original Mutable Instruments design uses a transparent central knob with one RGB LED behind it to create the different colors for each frame. I added another RGB LED in order to get a more evenly spread background light around the knob. In stead of using a transparent one, I designed the front panel with a white circle around the central potentiometer and a "normal" black knob, so that the colors only shine through around the edge of the knob.
+
+<img width="400" alt="Button off" src="https://user-images.githubusercontent.com/97026614/236385844-6c81bc8c-6eac-4fa2-b61d-effbd2c706ab.jpeg">
+
 ## Additional Information about specific Components
-Most of the components are through-hole, including the microchip part, thanks to the available Blue Pill board. There are a few SMD components, which I listed here.
-- DAC8552 (DAC, 8-VSSOP package, the most challenging component due to its size)
+There are several SMD components, which I listed here. Although the microcontroller does not need to be soldered separately, due to the use of the STM32F103 Blue Pill development board.
+- DAC124S085 (DAC, 10-VSSOP package, the most challenging component due to its size)
+- NJM4580/TL072 (OpAmp, 8-SOIC package)
 - LM1117-3.3 (voltage regulator, SOT-223 package)
 - LM4040B25 and LM4040B10 (voltage regulators, SOT-23-3 package)
 - MMBT3904 (SMD version of the 2N3904 transistor, SOT-23-3 Package)
-- 0.1uF bypass caps for ICs (1608 package)
+- 0.1uF capacitors (1608 package)
 
-Concerning the resistor size, I am usually using small-size resistors, about half the length of the usual size, so they need less space on the PCB. If you want to use my Gerber files, you have to consider tht fact. You might still use normal size resistors and put them in a standing position on the boards. Should also work fine.
+Concerning the resistor size, I am usually using small-size resistors, about half the length of the usual size, so they need less space on the PCB. If you want to use my Gerber files, you have to consider that fact. You might still use normal size resistors and put them in a standing position on the boards. Should also work fine.
 
 ## Firmware
 I shared the .hex files for the STM32F103 chip (bootloader and main) in the folder Firmware.
