@@ -50,9 +50,9 @@ I shared the .hex files for the STM32F103 chip (bootloader and main) in the fold
 
 The upload process is the same, as for my Braids clone. You can check out my [Braids video](https://youtu.be/TBMySGm7jKk) about how to program the Blue Pill board.
 
-Alternative firmware versions available, like e.g. Sheep or the Parasite version, both available as .wav files can also be uploaded via the procedure described in the official Mutable Instruments manual.
+An alternative Parasite firmware version available as .wav file, which can also be uploaded via the procedure described in the official Mutable Instruments manual.
 
-Check [this YouTube video](https://youtu.be/xhDt-fGgXi8) for more details about the firmware update process.
+Check [this YouTube video](xxx) for more details about the firmware update process.
 
 ## STM32F103 Version
 CAUTION! There are three different versions of the Blue Pill board available.
@@ -65,25 +65,3 @@ The versions differ in the flash memory size:
 The code size requires the 128kB version.
 However, that version might be difficult to find, if available at all.
 But it turned out, that STM3F103C8T6 is also ok for this module.
-
-## Calibration
-The calibration procedure is the same, as the one for the original module from Mutable Instruments.
-
-### CV input calibration
-This automatic procedure calibrates the V/Oct input (scale and offset), the FM input (offset), and the level input (offset).
-1. Set the FREQUENCY knob to its center position.
-2. Connect a patch cable to the FM input. Leave the other end of the cable unplugged (this prevents the normalling to \~1 semitone to be activated).
-3. Connect a patch cable to the Level input. Leave the other end of the cable unplugged (this prevents the normalling to full scale to be activated).
-4. Connect a MIDI>CV interface or precision voltage source to the V/Oct input.
-5. Hold the Mode switch for one second. All LEDs are lit (in yellow in the original version).
-6. Play a C2 note, or send a 1V voltage from your CV source.
-7. Press the Mode switch. The color of all LEDs are changing (to green in the original version).
-8. Play a C4 note, or send a 3V voltage from your CV source.
-9. Press the Mode switch.
-
-### Bipolar output offset calibration
-1. Remove any patch cable from the trigger input.
-2. Set the mode to AD or AR (mode LED is on, any color).
-3. Set the range to medium (range LED is off).
-4. Measure the voltage on the bipolar output. 
-5. Adjust the trimmer on the back of the board so that this voltage reaches 0V.
