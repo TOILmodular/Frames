@@ -32,6 +32,8 @@ I added the information about hole coordinates for the front panel in the folder
 ## Central Knob Illumination
 The original Mutable Instruments design uses a transparent central knob with one RGB LED behind it to create the different colors for each frame. I added another RGB LED in order to get a more evenly spread background light around the knob. In stead of using a transparent one, I designed the front panel with a white circle around the central potentiometer and a "normal" black knob, so that the colors only shine through around the edge of the knob.
 
+I designed my front panel as a black PCB without any circuit, just using the silk layer for all graphics and texts. The central circle is just a filled white circle on the silk layer of the PCB.
+
 <img width="400" alt="Button off" src="https://user-images.githubusercontent.com/97026614/236385844-6c81bc8c-6eac-4fa2-b61d-effbd2c706ab.jpeg">
 
 ## Additional Information about specific Components
