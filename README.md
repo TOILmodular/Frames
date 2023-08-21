@@ -27,7 +27,11 @@ The layout of the main PCB is the same for both versions.
 I created the Gerber files with the online tool EasyEDA and ordered it at JLCPCB.
 
 ## Panel Layout
-I added the information about hole coordinates for the front panel in the folder PanelLayout, referring to the component layout in the Gerber files.
+I added the information about hole coordinates for the front panel in the folder PanelLayout, referring to the component layout in the PCB Gerber files.
+
+In addition, there is another Gerber file for the panel, following the HP standard. My own modules do not follow that width standard, as I am only using sliding nuts in my racks.
+
+You can use the panel Gerber file to have the panel built out of PCB material.
 
 ## Central Knob Illumination
 The original Mutable Instruments design uses a transparent central knob with one RGB LED behind it to create the different colors for each frame. I added another RGB LED in order to get a more evenly spread background light around the knob. In stead of using a transparent one, I designed the front panel with a white circle around the central potentiometer and a "normal" black knob, so that the colors only shine through around the edge of the knob.
