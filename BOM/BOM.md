@@ -27,7 +27,7 @@
 | Diode | LED | 5 | |
 | Diode | LED RGB multi-color) | 2 | common cathode |
 | Transistor | MMBT3904 | 1 | SMD (SOT-23) |
-| Op Amp | TL072 or NJM4580 | 1 | SMD (8-SOIC) |
+| Op Amp | TL072 or NJM4580 | 6 | SMD (8-SOIC) |
 | Quad VCA | V2164 or AS2164 | 1 | |
 | DAC | DAC124S085 | 1 | SMD (10-VSSOP) |
 | Voltage Regulator | LM1117-3.3 | 2 | SMD (SOT-223) |
